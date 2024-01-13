@@ -1,27 +1,27 @@
 package com.microservices.currencyconversionservice;
 
+
 import java.math.BigDecimal;
 
 public class CurrencyConversion {
-
 	private Long id;
-	private String currency_from;
-	private String currency_to;
+	private String from;
+	private String to;
 	private BigDecimal quantity;
 	private BigDecimal conversionMultiple;
 	private BigDecimal totalCalculatedAmount;
 	private String environment;
-	
+
 	public CurrencyConversion() {
-		
+
 	}
-	
-	public CurrencyConversion(Long id, String currency_from, String currency_to,BigDecimal quantity, BigDecimal conversionMultiple,
-			 BigDecimal totalCalculatedAmount, String environment) {
+
+	public CurrencyConversion(Long id, String from, String to, BigDecimal quantity, BigDecimal conversionMultiple,
+							  BigDecimal totalCalculatedAmount, String environment) {
 		super();
 		this.id = id;
-		this.currency_from = currency_from;
-		this.currency_to = currency_to;
+		this.from = from;
+		this.to = to;
 		this.conversionMultiple = conversionMultiple;
 		this.quantity = quantity;
 		this.totalCalculatedAmount = totalCalculatedAmount;
@@ -36,20 +36,20 @@ public class CurrencyConversion {
 		this.id = id;
 	}
 
-	public String getCurrency_from() {
-		return currency_from;
+	public String getFrom() {
+		return from;
 	}
 
-	public void setCurrency_from(String currency_from) {
-		this.currency_from = currency_from;
+	public void setFrom(String from) {
+		this.from = from;
 	}
 
-	public String getCurrency_to() {
-		return currency_to;
+	public String getTo() {
+		return to;
 	}
 
-	public void setCurrency_to(String currency_to) {
-		this.currency_to = currency_to;
+	public void setTo(String to) {
+		this.to = to;
 	}
 
 	public BigDecimal getConversionMultiple() {
@@ -83,9 +83,6 @@ public class CurrencyConversion {
 	public void setEnvironment(String environment) {
 		this.environment = environment;
 	}
-	
-	
-	
-	
-	
+
+
 }
